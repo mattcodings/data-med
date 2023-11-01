@@ -26,8 +26,8 @@ export default {
     const menuItems = [
       { text: 'Home', url: '/' },
       { text: 'Profile', url: '/profile' },
-      { text: 'Sign In', url: '/sign-in' },
-      { text: 'Sign Up', url: '/sign-up' },
+      // { text: 'Sign In', url: '/sign-in' },
+      // { text: 'Sign Up', url: '/sign-up' },
       { text: 'Products', url: '/product-search' }
     ]
 
