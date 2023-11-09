@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <label>Search <input v-model="search" type="text" @change="filterProducts" /></label>
 </template>
 <script>
@@ -11,4 +11,4 @@ export default {
     return { search, filterProducts }
   }
 }
-</script>
+</script> -->

@@ -1,10 +1,17 @@
 <template>
-  <section class="d-flex">
+  <section class="d-flex filter-section">
     <form @submit.prevent="filterListResults" class="filter">
-      <label>New Only <input v-model="newOnly" type="checkbox" /> </label>
-      <h5>Max Price</h5>
-      <input v-model="priceFilter" type="number" min="0" max="10000" />
-      <button>Filter</button>
+      <h2 class="filter-title text-center">Filter</h2>
+      <div class="filter-topic">
+        <h4>Condition</h4>
+        <label>New Only <input v-model="newOnly" type="checkbox" /> </label>
+      </div>
+      <div class="filter-topic">
+        <h4>Max Price</h4>
+        <input v-model="priceFilter" type="number" min="0" max="10000" />
+      </div>
+
+      <button class="filter-button">Filter</button>
     </form>
     <ul>
       <li v-for="product in filterProducts" :key="product.id" class="d-flex mb-5">
@@ -72,5 +79,22 @@ export default {
 img {
   width: auto;
   height: 200px;
+}
+.filter-section {
+  margin: auto;
+  height: 300px;
+}
+.filter-topic {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.filter-title {
+  border-bottom: 1px solid black;
+}
+.filter-button {
+  display: block;
+  width: 75%;
+  margin: auto;
 }
 </style>
